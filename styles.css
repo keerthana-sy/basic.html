@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carousel img {
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-img-top {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.collapse {
+    text-align: left;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.list-group-item {
+    background: white;
+    border: none;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* Enable smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><b>EduPlatform</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section (Carousel) -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/hero1.jpg" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="images/hero2.jpg" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="images/hero3.jpg" class="d-block w-100" alt="Slide 3">
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- Button to Scroll to Courses Section -->
+<div class="text-center my-4">
+    <a href="#offerings" class="btn btn-lg btn-primary">Explore Our Courses</a>
+</div>
+
+<!-- Services Section with Expandable Courses -->
+<section id="offerings" class="container my-5">
+    <h2 class="text-center mb-4">Our Offerings</h2>
+    <div class="row text-center">
+        
+        <!-- Online Courses -->
+        <div class="col-md-4">
+            <div class="card p-3">
+                <img src="images/service1.jpg" class="card-img-top" alt="Online Courses">
+                <div class="card-body">
+                    <h3 class="card-title">Online Courses</h3>
+                    <p class="card-text">Learn from industry experts at your own pace.</p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#onlineCourses">View Courses</a>
+                    <div id="onlineCourses" class="collapse mt-2">
+                        <ul class="list-group">
+                            <li class="list-group-item">Web Development</li>
+                            <li class="list-group-item">Machine Learning</li>
+                            <li class="list-group-item">Cybersecurity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certified Programs -->
+        <div class="col-md-4">
+            <div class="card p-3">
+                <img src="images/service2.jpg" class="card-img-top" alt="Certified Programs">
+                <div class="card-body">
+                    <h3 class="card-title">Certified Programs</h3>
+                    <p class="card-text">Earn certifications to boost your career.</p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#certifiedPrograms">View Certifications</a>
+                    <div id="certifiedPrograms" class="collapse mt-2">
+                        <ul class="list-group">
+                            <li class="list-group-item">AWS Certified Developer</li>
+                            <li class="list-group-item">Google Data Engineer</li>
+                            <li class="list-group-item">Microsoft Azure Fundamentals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Support -->
+        <div class="col-md-4">
+            <div class="card p-3">
+                <img src="images/service3.jpg" class="card-img-top" alt="Community Support">
+                <div class="card-body">
+                    <h3 class="card-title">Community Support</h3>
+                    <p class="card-text">Join a network of learners and educators.</p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#communitySupport">View Benefits</a>
+                    <div id="communitySupport" class="collapse mt-2">
+                        <ul class="list-group">
+                            <li class="list-group-item">Live Q&A Sessions</li>
+                            <li class="list-group-item">Peer-to-Peer Mentorship</li>
+                            <li class="list-group-item">Exclusive Study Groups</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 EduPlatform. All rights reserved.
+</footer>
+
+</body>
+</html>
